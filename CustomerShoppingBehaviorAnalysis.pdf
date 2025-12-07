@@ -1,0 +1,57 @@
+Customer Shopping Behavior Analysis
+
+───────────────────────────────────────────────
+1. Project Overview
+This project analyzes customer shopping behavior using transactional data from 3,900 purchases across various product categories.
+The goal is to uncover insights into spending patterns, customer segments, product preferences, and subscription behavior to guide strategic business decisions.
+
+───────────────────────────────────────────────
+2. Dataset Summary
+
+- Rows: 3,900
+- Columns: 18
+
+Key Features:
+• Customer demographics (Age, Gender, Location, Subscription Status)
+• Purchase details (Item Purchased, Category, Purchase Amount, Season, Size, Color)
+• Shopping behavior (Discount Applied, Promo Code Used, Previous Purchases, Frequency of Purchases, Review Rating, Shipping Type)
+
+Missing Data: 37 values in Review Rating column
+
+───────────────────────────────────────────────
+3. Exploratory Data Analysis using Python
+
+- Data Loading: Imported with pandas.
+- Initial Exploration: Checked structure with .info(), generated stats with .describe().
+- Missing Data Handling: Imputed missing ratings using median value per category.
+- Column Standardization: Renamed columns to snake_case.
+- Feature Engineering: Made age group bins and purchase frequency columns.
+- Data Consistency: Dropped redundant promo_code_used column.
+- Database Integration: Loaded cleaned data into PostgreSQL database.
+
+───────────────────────────────────────────────
+4. Data Analysis (SQL Business Transactions)
+
+Key Questions Answered:
+1. Revenue by Gender  2. High-Spending Discount Users
+3. Top 5 Products by Rating  4. Shipping Type Comparison
+5. Subscribers vs. Non-Subscribers  6. Discount-Dependent Products
+7. Customer Segmentation  8. Top 3 Products per Category
+9. Repeat Buyers & Subscriptions  10. Revenue by Age Group
+
+───────────────────────────────────────────────
+5. Dashboard in Power BI
+
+- Interactive analysis of sales, customer segments, product rankings, and seasonality.
+- Filter by demographic, shipping, and more.
+
+───────────────────────────────────────────────
+6. Business Recommendations
+
+- Boost subscriptions: Promote exclusive benefits.
+- Launch loyalty program: Reward repeat buyers and loyal customers.
+- Review discount policy: Balance sales and margins.
+- Showcase top-rated products: Increase campaign impact.
+- Targeted marketing: Aim for high-revenue age groups and express-shipping users.
+
+
